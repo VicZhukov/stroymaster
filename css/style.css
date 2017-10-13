@@ -1,0 +1,455 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+html{
+	font-size: 10px;
+}
+
+
+.main_header{
+	height: 10vh;
+	min-height: 100px;
+	background-color: #1E2D3B;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+}
+.logo img{
+	height: 10vh;
+	min-height: 100px;
+}
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu{
+	width: 40%;
+	margin: 30px 15px 0px;
+}
+.menu ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+	list-style: none; 
+}
+.menu a{
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background: url(..//img/main_bg.jpg) no-repeat center;
+	background-attachment: fixed;
+	position: relative;
+}
+.main_overlay{
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+	z-index: 1;
+}
+.main_page{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+.main_page h1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-aroud;
+	align-items: center;
+	color: #fff;
+	font-size: 4rem;
+	width: 60%;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+.services{
+	height: 80vh;
+}
+.services_header h1{
+	color: #C6C6C6;
+	text-transform: uppercase;
+	font-size: 5.5rem;
+	text-align: center;
+	margin-top: 7rem;
+	margin-bottom: .5rem;
+}
+.services_line{
+	width: 15rem;
+	height: 1rem;
+	background-color: #EDCD1F;
+	margin: auto;
+	margin-bottom: 5rem;
+}
+.services_tags{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.services_tag{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem;
+	box-shadow: 0px 4px 29px 0px rgba(87, 92, 97, 0.54);
+}
+.info{
+	background-color: #F7F5F5;
+	height: 20rem;
+	width: 36.5rem;
+	text-align: left;
+}
+.info h2{
+	color: #3D5975;
+	font-size: 2.8rem;
+	font-weight: 200;
+	padding-left: 2rem;
+}
+.info ul{
+	font-size: 1.6rem;
+	width: 90%;
+	padding-left: 3rem;
+}
+.services_tag img{
+	width: 100%;
+}
+.about_us{
+	height: 85vh;
+	background: url(..//img/about_us.JPG) no-repeat right center;
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	margin-top: 15rem;
+}
+.about_us_info{
+	width: 50%;
+	background-color: #F7F5F5;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.about_us_line{
+	width: 15rem;
+	height: 1rem;
+	background-color: #EDCD1F;
+	
+}
+.about_us_info h1{
+	color: #C6C6C6;
+	font-size: 6rem;
+	margin-top: 7rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+.about_us_info p{
+	font-size: 2rem;
+	width: 60%;
+	text-align: center;
+}
+.about_us_info ul{
+	font-size: 2rem;
+	margin: 0;
+}
+.projects{
+	height: 75vh;
+}
+.header_projects{
+	text-align: center;
+	margin-top: 10rem;
+}
+.header_projects h1{
+	color: #C6C6C6;
+	font-size: 6rem;
+	margin-top: 7rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.projects_line{
+	width: 15rem;
+	height: 1rem;
+	background-color: #EDCD1F;
+	margin: auto;
+}
+.projects_tags{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 10rem;
+}
+.project_tag{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 3rem;
+}
+.project_tag img{
+	width: 350px;
+	height: 350px;
+}
+.project_tag a{
+	font-size: 2rem;
+	color: #333;
+	text-decoration: none;
+	margin: 1rem;
+	border-bottom: 1px solid transparent;
+}
+.project_tag a:hover{
+	border-bottom: 1px dotted #333;
+	width: 15rem;
+}
+.clients{
+	height: 45vh;
+	background-color: #F7F5F5;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.header_clients h1{
+	color: #C6C6C6;
+	font-size: 6rem;
+	margin-top: 8rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.clients_line{
+	width: 15rem;
+	height: 1rem;
+	background-color: #EDCD1F;
+	margin: auto;
+}
+.clients_logo{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.clients_logo img{
+	margin-left: 3rem;
+}
+#seed{
+	position: relative;
+	top: -1.5rem;
+}
+.contacts{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5rem;
+}
+.header_contacts h1{
+	color: #C6C6C6;
+	font-size: 6rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	font-weight: 200;
+}
+.contacts_line_1{
+	width: 15rem;
+	height: 1rem;
+	background-color: #EDCD1F;
+	margin: auto;
+}
+.contacts_map{
+	margin-top: 5rem;
+	text-align: center;
+}
+.contacts_info{
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+}
+.contacts_info_qv{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 1.5rem;
+}
+.contacts_info_qv h2{
+	font-size: 3.5rem;
+	font-weight: 200;
+}
+.contacts_info_qv p{
+	font-size: 2rem;
+	width: 70%;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+.contacts_info_qv input{
+	width: 80%;
+	height: 3.5rem;
+	margin: 0.2rem;
+	border: none;
+	background-color: #f7f5f5;
+	outline: none;
+	border-radius: 5px;
+	padding: 1rem;
+}
+.contacts_info_qv textarea{
+	width: 80%;
+	margin: 0.2rem;
+	border: none;
+	background-color: #f7f5f5;
+	outline: none;
+	border-radius: 5px;
+	padding: 1rem;
+	font-size: 1.6rem;
+}
+.contacts_info_qv button{
+	background-color: #1E2D3B;
+	color: #fff;
+	border: none;
+	padding: 7px;
+	outline: none;
+	margin-top: 1rem;
+	margin-left: 37rem;
+}
+.contacts_info_office{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1.5rem;
+	width: 50%;
+}
+.contacts_info_office h2{
+	font-size: 3.5rem;
+	font-weight: 200;
+}
+.contacts_info_office p{
+	font-size: 2rem;
+	width: 70%;
+	text-align: center;
+}
+.contacts_line_2{
+	width: 15rem;
+	height: 1rem;
+	background-color: #EDCD1F;
+	margin-top: 4rem;
+	margin-right: 22rem;
+}
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+	html{
+		font-size: 8px;
+		font-weight: 200;
+	}
+	.menu{
+		width: 60%;
+	}
+	.info{
+		width: 37.5rem;
+	}
+	.project_tag img{
+		width: 250px;
+		height: 250px;
+	}
+	.contacts_info_qv {
+		margin-left: -5rem;
+	}
+	.contacts_info_qv p{
+		width: 100%;
+	}
+	.contacts_info_qv input {
+		width: 100%;
+	}
+	.contacts_info_qv textarea{
+		width: 100%;
+		font-size: 1.9rem;
+	}
+	.contacts_info_qv button{
+		margin-left: 22rem;
+	}
+	.contacts_info_office{
+		margin-left: 10rem;
+	}
+	.contacts_info_office p{
+		width: 100%;
+	}
+}
+
+@media (max-width: 1280px){
+	.menu {
+		width: 50%;
+	}
+	.clients{
+		margin-top: 10rem;
+	}
+	.contacts_info_qv button{
+		margin-left: 22rem;
+	}
+}
+@media (max-width: 1366px){
+	.clients{
+		margin-top: 10rem;
+	}
+	.contacts_info_qv button{
+		margin-left: 24rem;
+	}
+}
+@media (max-width: 1600px){
+	.contacts_info_qv button{
+		margin-left: 29.5rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
